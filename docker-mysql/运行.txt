@@ -1,0 +1,1 @@
+docker run -itd --name v-mysql -p 3307:3306 -e  v-mysql
