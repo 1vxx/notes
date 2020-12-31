@@ -36,3 +36,13 @@ public class ViRole {
     private ViUser user;
 }
 ```
+
+#### 索引
+
+```java
+//唯一
+@Table(name = "Safety_Type", uniqueConstraints = @UniqueConstraint(columnNames = {"code"}))
+//普通
+@Table(name = "Safety_Type", indexes = {@Index(columnList = "applyMemberId"), @Index(columnList = "orgUnitId")})
+```
+
